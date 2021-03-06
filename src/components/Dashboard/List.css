@@ -1,0 +1,166 @@
+.searchBar {
+  border: none;
+  background-color: #d9dfeb;
+  padding: 5px 0px 5px 40px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.searchBar::placeholder {
+  color: #7a7d7e;
+  font-size: 14px;
+}
+
+.search-svg {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  margin-left: 15px;
+}
+
+.searchBar:focus {
+  outline: none;
+  border: 1px solid #c1c1c1;
+  border-radius: 8px;
+}
+
+.list-shadow {
+  box-shadow: 0px 3px 6px #00000014;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 340px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 296px;
+}
+
+.input::placeholder {
+  color: #7a7d7e;
+  font-size: 14px;
+}
+
+.todo-modal-input {
+  background-color: #eef1f8;
+  padding: 5px 0px 5px 40px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.modal-body {
+  padding: 0.5em 1rem !important;
+}
+
+.modal-header {
+  border-bottom: none !important;
+  padding-bottom: 0px !important;
+}
+
+.modal-footer {
+  border-top: none !important;
+  padding: 0em 0.75rem 1.25rem 0.75rem !important;
+}
+
+.modal-content {
+  border-radius: 12px !important;
+  padding: 10px;
+}
+
+.todo-modal-input:focus {
+  outline: none;
+  border: 1px solid #c1c1c1;
+  border-radius: 8px;
+}
+
+.modal-backdrop.show {
+  opacity: 0.3 !important;
+}
+
+.no-task-card {
+  align-items: center;
+  top: 55%;
+  position: relative;
+
+  transform: translateY(-50%);
+  text-align: center;
+  margin: auto;
+  width: 304px;
+  height: auto;
+  box-shadow: 0px 3px 6px #0000000a;
+  border-radius: 12px;
+}
+
+.tasks {
+  justify-content: space-between;
+
+  flex-direction: row;
+
+  display: flex;
+}
+
+.tasks-search {
+  position: relative;
+
+  justify-content: flex-end;
+
+  flex-direction: row;
+
+  display: flex;
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+  .no-task-card {
+    width: auto !important;
+    height: auto;
+    box-shadow: 0px 3px 6px #0000000a;
+    border-radius: 0px;
+    top: 16%;
+    position: relative;
+    border-radius: 0px !important;
+    transform: inherit;
+  }
+  .tasks {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tasks input {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Add-todo button {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .tasks-search {
+    flex-direction: column;
+    width: 100%;
+  }
+  .modal-dialog {
+    top: 75px !important;
+    width: 92% !important;
+  }
+  .modal:before {
+    height: auto;
+  }
+  .search-svg {
+    margin-top: 10px;
+  }
+}
