@@ -19,8 +19,9 @@ export default function Todos() {
     const response = await fetch("http://localhost:8000/todo");
     const todos = await response.json();
 
+     setTodos(todos.data);
+     
     const timer = setTimeout(() => {
-      setTodos(todos.data);
       setLoading(false);
     }, 2000);
     return () => clearTimeout(timer);
